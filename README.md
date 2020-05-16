@@ -27,7 +27,7 @@ $ kafka-topics --delete --zookeeper localhost:2181 --topic bots
 Code Description:
 
 ## Kafka Producer:
-##### Run producer_stream.ipynb for real time streaming of data into Kafka
+##### # Run producer_stream.ipynb for real time streaming of data into Kafka
 1. producer_stream.ipynb (Use direct twitter real time stream)
 2. producer_csv.ipynb  (Takes data from a CSV file)
 
