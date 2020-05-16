@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Hashtags', 'Total Hits'],
+          ['#RiyazNaikoo',  1849],
+          ['#AmitShah',  1731],
+          ['#Aurangabad', 1407],
+          ['#ISupportSudhirChoudhary', 1145],
+          ['#BJP', 934],
+          ['#RahulFightsForIndia', 896],
+          ['#IForIndia', 827],
+          ['#CongressForIndia', 795],
+          ['#HumModiKeSathHain', 785],
+          ['#IndiaWithZee', 661]
+        ]);
+
+        var options = {
+          title: 'Top 10 Hashtags',
+          width: 900,
+          legend: { position: 'none' },
+          chart: { title: 'Top 10 Hashtags',
+                   subtitle: 'popularity by number of hits' },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          axes: {
+            x: {
+              0: { side: 'top', label: 'Number of hits'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "90%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        chart.draw(data, options);
+      };
+    </script>
+  </head>
+  <body>
+    <div id="top_x_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
