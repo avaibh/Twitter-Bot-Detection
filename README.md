@@ -1,4 +1,4 @@
-# TwitterBot-Identification
+# Twitter-Bot-Detection
 
 Online social networks are crawling with autonomous computer programs termed as "bots" that spread propaganda in attempt to manipulate voters and otherwise influence political processes. Tweets from a few originators, along with certain hashtags would get picked up by these "bots" and retweeted thousands of times until the hashtag reached the trending section. The rise of hate speeches on social media also attracted bots favoring the opposite narrative, though they were fewer in number. To investigate the full extent to which these bots were being implemented, we decided to study the impact of Twitter bots on the online political conversations in India.
 
